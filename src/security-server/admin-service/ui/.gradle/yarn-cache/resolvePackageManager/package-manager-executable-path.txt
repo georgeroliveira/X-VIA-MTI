@@ -1,0 +1,1 @@
+/home/georgeoliveira/X-Road/src/.gradle/yarn-node/18.18.2/bin/yarn

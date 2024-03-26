@@ -1,0 +1,28 @@
+plugins {
+    id 'com.github.johnrengelman.shadow'
+}
+
+dependencies {
+
+    implementation(project(':common:common-util'))
+    implementation(project(':common:common-db'))
+    implementation(project(':common:common-messagelog'))
+    implementation(project(':addons:messagelog:messagelog-db'))
+    implementation(project(':asic-util'))
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'ee.ria.xroad.messagelog.archiver.LogArchiverMain'
+    }
+}
+
+shadowJar {
+    archiveVersion = ''
+    archiveClassifier = ''
+    exclude('**/module-info.class')
+    from rootProject.file("LICENSE.txt")
+    mergeServiceFiles()
+}
+
+assemble.dependsOn shadowJar
