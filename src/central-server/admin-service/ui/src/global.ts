@@ -213,11 +213,11 @@ export const mainTabs: Tab[] = [
 
 // Version 7.0 colors as enum.
 export enum Colors {
-  Purple10 = '#efebfb',
-  Purple20 = '#e0d8f8',
-  Purple30 = '#d1c4f4',
-  Purple70 = '#9376e6',
-  Purple100 = '#663cdc',
+  Purple10 = '#bdbfd6',
+  Purple20 = '#656b9f',
+  Purple30 = '#4f5692',
+  Purple70 = '#394184',
+  Purple100 = '#232c77',
   Black10 = '#e8e8e8',
   Black30 = '#bcbbbb',
   Black50 = '#908e8e',

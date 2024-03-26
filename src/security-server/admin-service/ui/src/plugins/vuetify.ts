@@ -23,10 +23,10 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-import 'vuetify/styles';
 import '@mdi/font/css/materialdesignicons.css';
 import { createVuetify } from 'vuetify';
 import { aliases, mdi } from 'vuetify/iconsets/mdi';
+import 'vuetify/styles';
 
 export default createVuetify({
   defaults: {
@@ -61,7 +61,7 @@ export default createVuetify({
       light: {
         dark: false,
         colors: {
-          primary: '#663cdc',
+          primary: '#232c77',
           secondary: '#00C9E7',
           accent: '#8c9eff',
           grey: '#9c9c9c',

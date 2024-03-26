@@ -131,6 +131,6 @@ export default defineComponent({
 }
 
 .gradient {
-  background: linear-gradient(270deg, #663cdc 0%, #cd9dc8 99.58%);
+  background: linear-gradient(270deg, #232c77 0%, #cd9dc8 99.58%);
 }
 </style>

@@ -27,7 +27,7 @@
   <div class="help-wrap" @click="helpClick()">
     <v-hover v-slot="{ isHovering }">
       <xrd-icon-base
-        :color="isHovering ? '#663cdc' : '#575169'"
+        :color="isHovering ? '#232c77' : '#575169'"
         class="help-icon"
       >
         <xrd-icon-tooltip />
@@ -46,8 +46,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
 import { XrdHelpDialog, XrdIconTooltip } from '@niis/shared-ui';
+import { defineComponent } from 'vue';
 
 export default defineComponent({
   components: {
