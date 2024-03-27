@@ -11,9 +11,9 @@
     "textUnicorn": "unicórnio"
   },
   "accessRights": {
-    "addServiceClients": "Adicionar sujeitos",
+    "addServiceClients": "Adicionar assuntos",
     "addServiceClientsSuccess": "Direitos de acesso adicionados com sucesso",
-    "addServiceClientsTitle": "Adicionar Sujeitos",
+    "addServiceClientsTitle": "Adicionar Assuntos",
     "addSubjectsSuccess": "Direitos de acesso adicionados com sucesso",
     "id": "ID",
     "memberName": "Nome do Membro / Descrição do Grupo",
