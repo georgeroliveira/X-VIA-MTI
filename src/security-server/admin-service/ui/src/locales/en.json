@@ -341,7 +341,7 @@
         "SUCCESS": "Tudo ok",
         "UNKNOWN": "Desconhecido"
       },
-      "title": "Timestamping"
+      "title": "Marcação de Tempo"
     },
     "encryption": {
       "status": {
@@ -950,63 +950,63 @@
       "table": {
         "header": {
           "distinguishedName": "Hash (SHA-224)",
-          "generated": "Generated"
+          "generated": "Gerado"
         }
       },
-      "title": "Configuration Anchor"
+      "title": "Âncora de Configuração"
     },
     "timestampingServices": {
       "action": {
         "add": {
-          "button": "Add",
+          "button": "Adicionar",
           "dialog": {
-            "info": "Trusted Timestamping services:",
-            "success": "Timestamping service added",
-            "title": "Add Timestamping Service"
+            "info": "Serviços de Carimbo de Tempo Confiáveis:",
+            "success": "Serviço de carimbo de tempo adicionado",
+            "title": "Adicionar Serviço de Carimbo de Tempo"
           }
         }
       },
       "table": {
         "action": {
           "delete": {
-            "button": "Delete",
+            "button": "Deletar",
             "confirmation": {
-              "text": "Are you sure you want to delete the timestamping service?",
-              "title": "Are you sure?"
+              "text": "Você tem certeza que deseja deletar o serviço de carimbo de tempo?",
+              "title": "Você tem certeza?"
             },
-            "success": "Timestamping service successfully deleted"
+            "success": "Serviço de carimbo de tempo deletado com sucesso"
           }
         },
         "header": {
-          "serviceURL": "Service URL",
-          "timestampingService": "Timestamping Service"
+          "serviceURL": "URL do Serviço",
+          "timestampingService": "Serviço de Carimbo de Tempo"
         }
       },
-      "title": "Timestamping Services"
+      "title": "Serviços de Carimbo de Tempo"
     },
     "securityServer": {
-      "securityServer": "Security Server",
-      "serverAddress": "Server address",
+      "securityServer": "Servidor de Segurança",
+      "serverAddress": "Endereço do servidor",
       "editDialog": {
-        "title": "Edit Security Server address"
+        "title": "Editar endereço do Servidor de Segurança"
       },
-      "addressChangeInProgress": "CHANGE IN PROGRESS",
-      "updateSubmitted": "Security Server address change successfully submitted"
+      "addressChangeInProgress": "MUDANÇA EM PROGRESSO",
+      "updateSubmitted": "Mudança de endereço do Servidor de Segurança submetida com sucesso"
     },
-    "title": "System parameters"
+    "title": "Parâmetros do Sistema"
   },
   "tab": {
     "client": {
-      "details": "Details",
-      "internalServers": "Internal servers",
-      "localGroups": "Local groups",
-      "serviceClients": "Service clients",
-      "services": "Services"
+      "details": "Detalhes",
+      "internalServers": "Servidores Internos",
+      "localGroups": "Grupos Locais",
+      "serviceClients": "Clientes de Serviço",
+      "services": "Serviços"
     },
     "keys": {
-      "apiKey": "API Keys",
-      "signAndAuthKeys": "SIGN and AUTH Keys",
-      "ssTlsCertificate": "Security Server TLS Key"
+      "apiKey": "Chaves de API",
+      "signAndAuthKeys": "Chaves de ASSINATURA e AUTENTICAÇÃO",
+      "ssTlsCertificate": "Chave TLS do Servidor de Segurança"
     },
     "main": {
       "clients": "Clientes",
