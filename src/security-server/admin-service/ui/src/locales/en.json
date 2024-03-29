@@ -11,9 +11,9 @@
     "textUnicorn": "unicórnio"
   },
   "accessRights": {
-    "addServiceClients": "Adicionar assuntos",
+    "addServiceClients": "Adicionar clientes",
     "addServiceClientsSuccess": "Direitos de acesso adicionados com sucesso",
-    "addServiceClientsTitle": "Adicionar Assuntos",
+    "addServiceClientsTitle": "Adicionar clientes",
     "addSubjectsSuccess": "Direitos de acesso adicionados com sucesso",
     "id": "ID",
     "memberName": "Nome do Membro / Descrição do Grupo",
@@ -801,9 +801,9 @@
     "accessRightsGiven": "Direitos de Acesso Concedidos",
     "addSelected": "Adicionar Selecionados",
     "addService": "Adicionar serviço",
-    "addServiceClient": "Adicionar assunto",
+    "addServiceClient": "Adicionar cliente",
     "addServiceClientAccessRightSuccess": "Direitos de acesso adicionados com sucesso",
-    "addServiceClientTitle": "Adicionar um assunto",
+    "addServiceClientTitle": "Adicionar um cliente",
     "id": "ID",
     "memberGroupCodeLabel": "Código do Membro/Grupo",
     "memberGroupStep": "Membro / Grupo",

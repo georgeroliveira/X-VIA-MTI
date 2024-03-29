@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.niis.xroad.oasvalidatorplugin.Oas3ValidatorTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-03-22T17:45:55" hostname="vm-jammy-up-xroad" time="1.836">
+<testsuite name="org.niis.xroad.oasvalidatorplugin.Oas3ValidatorTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-03-27T13:08:20" hostname="MacBook-Air-de-George.local" time="0.969">
   <properties/>
-  <testcase name="validateApiSpecStyleFail" classname="org.niis.xroad.oasvalidatorplugin.Oas3ValidatorTest" time="1.662"/>
-  <testcase name="validateApiSpecFail" classname="org.niis.xroad.oasvalidatorplugin.Oas3ValidatorTest" time="0.079"/>
-  <testcase name="validateApiSpecNotFound" classname="org.niis.xroad.oasvalidatorplugin.Oas3ValidatorTest" time="0.005"/>
-  <testcase name="validateApiSpecSuccess" classname="org.niis.xroad.oasvalidatorplugin.Oas3ValidatorTest" time="0.085"/>
+  <testcase name="validateApiSpecStyleFail" classname="org.niis.xroad.oasvalidatorplugin.Oas3ValidatorTest" time="0.908"/>
+  <testcase name="validateApiSpecFail" classname="org.niis.xroad.oasvalidatorplugin.Oas3ValidatorTest" time="0.03"/>
+  <testcase name="validateApiSpecNotFound" classname="org.niis.xroad.oasvalidatorplugin.Oas3ValidatorTest" time="0.001"/>
+  <testcase name="validateApiSpecSuccess" classname="org.niis.xroad.oasvalidatorplugin.Oas3ValidatorTest" time="0.027"/>
   <system-out><![CDATA[
-Validating API specification: /home/georgeoliveira/X-Road/src/buildSrc/src/test/resources/petstore-validation-style-fail.yaml
-Validating API specification: /home/georgeoliveira/X-Road/src/buildSrc/src/test/resources/petstore-validation-style-fail.yaml -> FAILED
+Validating API specification: /Users/george/Documents/#NOVO-X-VIA/X-VIA-MTI/src/buildSrc/src/test/resources/petstore-validation-style-fail.yaml
+Validating API specification: /Users/george/Documents/#NOVO-X-VIA/X-VIA-MTI/src/buildSrc/src/test/resources/petstore-validation-style-fail.yaml -> FAILED
 
-Validating API specification: /home/georgeoliveira/X-Road/src/buildSrc/src/test/resources/petstore-validation-fail.yaml
-Validating API specification: /home/georgeoliveira/X-Road/src/buildSrc/src/test/resources/petstore-validation-fail.yaml -> FAILED
+Validating API specification: /Users/george/Documents/#NOVO-X-VIA/X-VIA-MTI/src/buildSrc/src/test/resources/petstore-validation-fail.yaml
+Validating API specification: /Users/george/Documents/#NOVO-X-VIA/X-VIA-MTI/src/buildSrc/src/test/resources/petstore-validation-fail.yaml -> FAILED
 
-Validating API specification: /home/georgeoliveira/X-Road/src/buildSrc/src/test/resources/not-found.yaml
+Validating API specification: /Users/george/Documents/#NOVO-X-VIA/X-VIA-MTI/src/buildSrc/src/test/resources/not-found.yaml
 
-Validating API specification: /home/georgeoliveira/X-Road/src/buildSrc/src/test/resources/petstore-validation-success.yaml
-Validating API specification: /home/georgeoliveira/X-Road/src/buildSrc/src/test/resources/petstore-validation-success.yaml -> SUCCESS
+Validating API specification: /Users/george/Documents/#NOVO-X-VIA/X-VIA-MTI/src/buildSrc/src/test/resources/petstore-validation-success.yaml
+Validating API specification: /Users/george/Documents/#NOVO-X-VIA/X-VIA-MTI/src/buildSrc/src/test/resources/petstore-validation-success.yaml -> SUCCESS
 ]]></system-out>
   <system-err><![CDATA[--- Style validation errors ---
 
