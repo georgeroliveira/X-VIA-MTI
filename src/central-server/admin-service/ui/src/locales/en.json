@@ -38,913 +38,912 @@
     "searching": "Searching...",
     "submit": "Submit",
     "unregister": "Unregister",
-    {
-      "select": "Selecionar",
-      "generateCsr": "Gerar CSR"
+    "select": "Select",
+    "generateCsr": "Generate CSR"
+  },
+  "alert": {
+    "count": "Amount of same errors:",
+    "id": "ID"
+  },
+  "apiKey": {
+    "createApiKey": {
+      "button": "CREATE API KEY",
+      "step": {
+        "keyDetails": {
+          "apiKey": "API key",
+          "apiKeyID": "API key ID",
+          "assignedRoles": "Roles assigned",
+          "createKeyButton": "Create Key",
+          "name": "Key Details",
+          "note": "NOTE: save the API key in a secure place. The API key is visible only at the time of key generation. It will not be presented again and cannot be retrieved later."
+        },
+        "roles": {
+          "description": "Please select the roles associated with the API key. The roles define the permissions granted to the API key.",
+          "name": "Roles",
+          "selectRoles": "Select roles"
+        }
+      },
+      "success": "API key successfully created",
+      "title": "Create API key"
     },
-    "alert": {
-      "count": "Quantidade de erros iguais:",
-      "id": "ID"
+    "role": {
+      "XROAD_REGISTRATION_OFFICER": "Registration Officer",
+      "XROAD_SECURITY_OFFICER": "Security Officer",
+      "XROAD_SYSTEM_ADMINISTRATOR": "System Administrator",
+      "XROAD_MANAGEMENT_SERVICE": "Management Services"
     },
-    "apiKey": {
-      "createApiKey": {
-        "button": "CRIAR CHAVE API",
-        "step": {
-          "keyDetails": {
-            "apiKey": "Chave API",
-            "apiKeyID": "ID da Chave API",
-            "assignedRoles": "Funções atribuídas",
-            "createKeyButton": "Criar Chave",
-            "name": "Detalhes da Chave",
-            "note": "NOTA: salve a chave API em um local seguro. A chave API só é visível no momento da geração. Ela não será apresentada novamente e não pode ser recuperada posteriormente."
+    "edit": {
+      "roleRemoveOnly": "(remove only)"
+    },
+    "table": {
+      "action": {
+        "edit": {
+          "button": "Edit",
+          "dialog": {
+            "message": "Roles associated with the API key:",
+            "title": "Edit API Key (ID: {id})"
           },
-          "roles": {
-            "description": "Selecione as funções associadas à chave API. As funções definem as permissões concedidas à chave API.",
-            "name": "Funções",
-            "selectRoles": "Selecionar funções"
-          }
+          "success": "API key with ID {id} saved"
         },
-        "success": "Chave API criada com sucesso",
-        "title": "Criar chave API"
-      },
-      "role": {
-        "XROAD_REGISTRATION_OFFICER": "Oficial de Registro",
-        "XROAD_SECURITY_OFFICER": "Oficial de Segurança",
-        "XROAD_SYSTEM_ADMINISTRATOR": "Administrador do Sistema",
-        "XROAD_MANAGEMENT_SERVICE": "Serviços de Gestão"
-      },
-      "edit": {
-        "roleRemoveOnly": "(remover apenas)"
-      },
-      "table": {
-        "action": {
-          "edit": {
-            "button": "Editar",
-            "dialog": {
-              "message": "Funções associadas à chave API:",
-              "title": "Editar Chave API (ID: {id})"
-            },
-            "success": "Chave API com ID {id} salva"
+        "revoke": {
+          "button": "Revoke key",
+          "confirmationDialog": {
+            "message": "Are you sure you want to revoke the API key with ID {id}?",
+            "title": "Are you sure?"
           },
-          "revoke": {
-            "button": "Revogar chave",
-            "confirmationDialog": {
-              "message": "Tem certeza de que deseja revogar a chave API com ID {id}?",
-              "title": "Tem certeza?"
-            },
-            "success": "Chave API com ID {id} revogada com sucesso"
-          }
-        },
-        "header": {
-          "id": "ID",
-          "roles": "Funções"
-        }
-      }
-    },
-    "backup": {
-      "createBackup": {
-        "button": "Fazer backup da config.",
-        "messages": {
-          "success": "Backup {file} criado com sucesso"
+          "success": "API key with ID {id} successfully revoked"
         }
       },
-      "uploadBackup": {
-        "button": "Carregar backup",
-        "confirmationDialog": {
-          "confirmation": "O arquivo {name} já existe, tem certeza de que deseja substituí-lo?",
-          "title": "Arquivo já existe"
-        },
-        "success": "Backup {file} carregado com sucesso"
-      },
-      "deleteBackup": {
-        "dialog": {
-          "confirmation": "Tem certeza de que deseja deletar o backup {file}?",
-          "title": "Tem certeza?"
-        },
-        "success": "Backup {file} deletado"
-      },
-      "restoreFromBackup": {
-        "dialog": {
-          "confirmation": "Tem certeza de que deseja restaurar a partir de {file}?",
-          "title": "Tem certeza?"
-        },
-        "success": "Configuração restaurada de {file}"
+      "header": {
+        "id": "ID",
+        "roles": "Roles"
+      }
+    }
+  },
+  "backup": {
+    "createBackup": {
+      "button": "Back up config.",
+      "messages": {
+        "success": "Backup {file} successfully created"
       }
     },
-    "customValidation": {
-      "invalidUrl": "URL é inválida, exemplos de formatos válidos de URL: 'http://www.example.com', 'https://www.example.com'"
+    "uploadBackup": {
+      "button": "Upload backup",
+      "confirmationDialog": {
+        "confirmation": "File {name} already exists, are you sure you want to overwrite it?",
+        "title": "File already exists"
+      },
+      "success": "Backup {file} uploaded successfully"
     },
-    "error_code": {
-      "certificate_profile_info_class_not_found": "Classe de informações do perfil do certificado não encontrada",
-      "certification_service_not_found": "Serviço de certificação não encontrado.",
-      "configuration_not_found": "Fonte de Configuração não encontrada",
-      "configuration_part_file_not_found": "Arquivo de parte da configuração não encontrado",
-      "configuration_part_validation_failed": "Validação da parte da configuração falhou",
-      "configuration_part_validator_not_found": "Validador da parte da configuração não encontrado",
-      "error_activating_signing_key": "Erro ao ativar chave de assinatura",
-      "error_deleting_signing_key": "Erro ao deletar chave de assinatura",
-      "error_recreating_anchor": "Erro ao recriar arquivo de âncora",
-      "global_group_exists": "Grupo global com o mesmo código já existe.",
-      "global_group_not_found": "Grupo global com o código fornecido não existe",
-      "init_already_initialized": "Inicialização do servidor central falhou, já totalmente inicializado",
-      "init_invalid_params": "Parâmetros fornecidos vazios, ausentes ou redundantes para inicialização",
-      "init_signer_pin_policy_failed": "Falha na política de PIN do Signer",
-      "init_software_token_failed": "Inicialização do token de software falhou",
-      "instance_identifier_not_set": "Parâmetro do sistema para identificador de instância não configurado",
-      "intermediate_ca_not_found": "CA intermediária não encontrada",
-      "invalid_certificate": "Certificado X.509 inválido",
-      "invalid_member_id": "ID de membro inválido",
-      "invalid_pagination_properties": "Propriedades de paginação inválidas",
-      "invalid_service_provider_id": "ID de provedor de serviços inválido",
-      "invalid_sort_properties": "Parâmetro de ordenação inválido",
-      "invalid_subsystem_id": "ID de subsistema inválido",
-      "invalid_url": "URL inválida",
-      "key_generation_failed": "Geração de chave de assinatura falhou",
-      "management_request_cannot_register_owner": "Não é possível registrar o proprietário como cliente",
-      "management_request_client_already_owner": "Cliente já é proprietário do servidor de segurança",
-      "management_request_client_already_registered": "Cliente já registrado em um servidor",
-      "management_request_client_registration_not_found": "Registro de cliente não existe",
-      "management_request_exists": "Já existe uma solicitação de gerenciamento pendente.",
-      "management_request_invalid_auth_certificate": "Certificado de autenticação inválido",
-      "management_request_invalid_state": "Operação solicitada não pode ser aplicada neste estado",
-      "management_request_invalid_state_for_approval": "Solicitação de gerenciamento não pode ser aprovada",
-      "management_request_member_not_found": "Membro não existe",
-      "management_request_not_found": "Nenhuma solicitação de gerenciamento com o ID especificado encontrada.",
-      "management_request_not_supported": "Tipo de solicitação de gerenciamento desconhecido",
-      "management_request_owner_must_be_client": "Proprietário não está registrado como cliente no servidor de segurança",
-      "management_request_owner_must_be_member": "Proprietário deve ser um membro",
-      "management_request_security_server_exists": "Certificado já registrado.",
-      "management_request_server_code_exists": "Membro já possui um servidor de segurança com código de servidor",
-      "management_request_server_not_found": "Servidor de segurança não encontrado",
-      "management_request_server_owner_not_found": "Proprietário do servidor de segurança não encontrado",
-      "management_request_unknown_type": "Tipo de solicitação desconhecido",
-      "management_service_provider_not_set": "Provedor de serviços de gerenciamento não configurado",
-      "member_class_exists": "Classe de membro com o mesmo código já existe.",
-      "member_class_is_in_use": "Não é possível deletar classe de membro: Encontrados membros X-Road pertencentes à classe. Apenas classes sem membros registrados podem ser deletadas.",
-      "member_class_not_found": "Nenhuma classe de membro com o código especificado encontrada.",
-      "member_exists": "Membro com o mesmo código já existe.",
-      "member_not_found": "Nenhum membro com o código/ID especificado encontrado.",
-      "no_configuration_signing_keys_configured": "Nenhuma chave de assinatura de configuração configurada",
-      "ocsp_responder_not_found": "Respondedor OCSP não encontrado",
-      "owners_global_group_cannot_be_deleted": "Não é possível realizar ação de deletar no grupo de proprietários do servidor",
-      "owners_global_group_member_cannot_be_deleted": "Não é possível realizar ação de deletar no membro do grupo de proprietários do servidor",
-      "signer_proxy_error": "Exceção do proxy de assinante",
-      "signing_key_action_not_possible": "Ação na chave de assinatura não possível",
-      "signing_key_not_found": "Chave de assinatura não encontrada",
-      "ss_auth_certificate_not_found": "Certificado de autenticação não encontrado",
-      "subsystem_already_registered_to_security_server": "Subsistema já registrado no servidor de segurança",
-      "subsystem_exists": "Subsistema com o mesmo código já existe.",
-      "subsystem_not_found": "Subsistema com o código especificado não encontrado.",
-      "subsystem_not_registered_to_security_server": "Subsistema não está registrado no servidor de segurança dado.",
-      "subsystem_registered_and_cannot_be_deleted": "Não é possível deletar subsistema já registrado.",
-      "timestamping_authority_not_found": "Autoridade de carimbo de tempo não encontrada",
-      "token_action_not_possible": "Ação no token não possível",
-      "token_activation_failed": "Ativação do token falhou",
-      "token_deactivation_failed": "Desativação do token falhou",
-      "token_fetch_failed": "Erro ao obter tokens",
-      "token_incorrect_pin_format": "Formato de PIN incorreto",
-      "token_invalid_characters": "O código PIN fornecido contém caracteres inválidos",
-      "token_not_found": "Token não encontrado",
-      "token_pin_final_try": "Tentativas restantes: 1",
-      "token_pin_locked": "PIN do token bloqueado",
-      "token_weak_pin": "O código PIN fornecido era muito fraco",
-      "unknown_configuration_part": "Parte da configuração desconhecida",
-      "malformed_anchor": "Arquivo de âncora malformado",
-      "trusted_anchor_verification_failed": "Falha na verificação de âncora confiável",
-      "trusted_anchor_not_found": "Âncora confiável não encontrada",
-      "internal_error": "Erro interno. Consulte os logs do servidor para mais detalhes",
-      "invalid_parameters": "Falha na validação",
-      "security_server_not_found": "Servidor de segurança não encontrado",
-      "invalid_encoded_id": "ID codificado inválido",
-      "id_not_a_number": "ID não é um número",
-      "api_key_not_found": "Chave API não encontrada",
-      "invalid_role": "Função inválida",
-      "invalid_file_content_type": "Tipo de conteúdo do arquivo carregado inválido",
-      "invalid_file_extension": "Extensão de arquivo inválida",
-      "double_file_extension": "Extensão dupla de arquivo não permitida",
-      "invalid_filename": "Nome de arquivo inválido",
-      "invalid_backup_file": "Arquivo de backup inválido",
-      "backup_file_not_found": "Backup não encontrado",
-      "backup_generation_failed": "Falha ao gerar backup",
-      "generate_backup_interrupted": "Geração de backup interrompida",
-      "restore_process_failed": "Falha no processo de restauração",
-      "backup_restore_interrupted": "Restauração de backup interrompida",
-      "backup_deletion_failed": "Falha ao deletar backup",
-      "resource_read_failed": "Falha ao ler recurso",
-      "conf_verification.anchor_not_for_external_source": "Falha na verificação de configuração: anchor_not_for_external_source",
-      "conf_verification.missing_private_params": "Falha na verificação de configuração: missing_private_params",
-      "conf_verification.other": "Falha na verificação de configuração: other",
-      "conf_verification.outdated": "Falha na verificação de configuração: outdated",
-      "conf_verification.signature_invalid": "Falha na verificação de configuração: assinatura inválida",
-      "conf_verification.unreachable": "Falha na verificação de configuração: inacessível",
-      "cannot_add_member_to_owners_group": "Não é possível adicionar membros ao grupo de proprietários do servidor",
-      "validation_failure": "Falha na validação",
-      "invalid_distinguished_name": "Nome distintivo inválido",
-      "generate_key_cert_interrupted": "Interrupção na geração de chave e certificado",
-      "key_and_cert_generation_failed": "Falha ao gerar chave e certificado TLS",
-      "csr_generation_failed": "Geração de CSR falhou",
-      "cannot_convert_bytes_to_certificate": "Não é possível converter bytes em certificado",
-      "certificate_writing_failed": "Falha ao escrever certificado no arquivo",
-      "cannot_read_certificate": "Não é possível ler o certificado TLS",
-      "key_not_found": "O certificado importado não corresponde à chave TLS",
-      "certificate_already_exists": "O certificado importado já existe",
-      "certificate_import_failed": "Não foi possível importar o certificado TLS"
-    },
-    "fields": {
-      "init": {
-        "address": "Endereço do Servidor Central",
-        "confirmPin": "Repetir PIN",
-        "identifier": "Identificador da Instância",
-        "pin": "PIN",
-        "repeatPin": "Repetir PIN"
-      },
-      "initialServerConf": {
-        "centralServerAddress": "Endereço do Servidor Central",
-        "instanceIdentifier": "Identificador da Instância"
-      },
-      "password": "Senha",
-      "username": "Usuário",
-      "url": "URL",
-      "tokenPin": "PIN do Token",
-      "keyLabel": "Nome amigável da chave",
-      "memberCode": "Código do Membro",
-      "securityServerAddress": "Endereço do servidor de segurança",
-      "serverCode": "Código do Servidor",
-      "securityServerCode": "Código do servidor de segurança"
-    },
-    "filters": {
-      "apply": "Aplicar",
-      "chooseFilters": "Escolher filtros",
-      "clearFields": "Limpar campos",
-      "groupMembers": {
-        "byClass": "Por classe",
-        "byCode": "Por código",
-        "byInstance": "Por instância",
-        "bySubsystem": "Por subsistema",
-        "byType": "Por tipo",
-        "class": "Classe",
-        "instance": "Instância",
-        "member": "Membro",
-        "subsystem": "Subsistema"
-      },
-      "managementRequests": {
-        "byCreationDate": "Por data de criação",
-        "byRequestType": "Por tipo de solicitação",
-        "byServerCode": "Por código do servidor",
-        "byServerOwnerClass": "Por classe do proprietário do servidor",
-        "byServerOwnerCode": "Por código do proprietário do servidor",
-        "byServerOwnerName": "Por nome do proprietário do servidor",
-        "bySource": "Por fonte",
-        "byStatus": "Por status"
-      }
-    },
-    "footer": {
-      "copyright": {
-        "company": "Instituto Nórdico para Soluções de Interoperabilidade (NIIS)",
-        "licenceInfo": "Informações de licença",
-        "title": "Direitos Autorais"
-      },
-      "software": {
-        "feedback": "Feedback",
-        "title": "Software",
-        "versionPrefix": "X-Road"
-      }
-    },
-    "global": {
-      "appTitle": "Servidor Central X-Road",
-      "pageNotFound": "oops, página não encontrada",
-      "approve": "Aprovar",
-      "class": "Classe",
-      "code": "Código",
-      "created": "Criado",
-      "delete": "Deletar",
-      "id": "ID",
-      "instance": "Instância",
-      "memberClass": "Classe de Membro",
-      "memberCode": "Código do Membro",
-      "memberName": "Nome do Membro",
-      "name": "Nome",
-      "navigation": {
-        "back": "Voltar"
-      },
-      "register": "Registrar",
-      "search": "Buscar",
-      "server": "Servidor",
-      "status": "Status",
-      "subsystem": "Subsistema",
-      "type": "Tipo"
-    },
-    "globalConf": {
-      "globalConf": "Configuração Global",
-      "internalConf": "Configuração Interna",
-      "trustedAnchors": "Âncora Confiável",
-      "cfgParts": {
-        "title": "Partes da Configuração",
-        "file": "Arquivo",
-        "contentIdentifier": "Identificador do Conteúdo",
-        "version": "Versão",
-        "allVersions": "Todas as versões",
-        "updated": "Atualizado",
-        "dialog": {
-          "upload": {
-            "title": "Carregar Parte da Configuração",
-            "uploadConfigurationPart": "Carregue o arquivo de configuração do seu computador",
-            "success": "Parte da configuração carregada com sucesso."
-          }
-        }
-      },
-      "anchor": {
-        "title": "Âncora",
-        "certificateHash": "Hash do Certificado (SHA-224)",
-        "created": "Criado",
-        "download": "Baixar",
-        "recreate": "Recriar",
-        "recreateSuccess": "{configurationType} âncora de configuração gerada com sucesso"
-      },
-      "downloadUrl": {
-        "title": "URL de Download",
-        "urlAddress": "Endereço da URL"
-      },
-      "trustedAnchor": {
-        "dialog": {
-          "upload": {
-            "confirmation": "Continuar com o carregamento?",
-            "field": {
-              "generated": "Gerado",
-              "hash": "Hash (SHA-224)"
-            },
-            "info": "Detalhes da âncora confiável:",
-            "success": "Âncora confiável carregada com sucesso",
-            "title": "Confirmar detalhes da âncora confiável"
-          },
-          "delete": {
-            "confirmation": "Deletar a âncora {identifier} com Hash (SHA-224) {hash}?",
-            "success": "Âncora confiável deletada com sucesso",
-            "title": "Deletar Âncora"
-          }
-        }
-      }
-    },
-    "globalGroup": {
-      "added": "Adicionado",
-      "addMembers": "Adicionar Membros",
-      "areYouSure": "Tem certeza de que deseja remover o grupo global {group}?",
-      "code": "Código",
-      "class": "Classe",
-      "deleteGroup": "Deletar Grupo",
-      "description": "Descrição",
-      "descriptionSaved": "Descrição salva com sucesso.",
-      "editDescription": "Editar Descrição",
-      "groupDeletedSuccessfully": "Grupo global deletado com sucesso.",
-      "groupMembers": "Membros do grupo ({memberCount})",
-      "instance": "Instância",
-      "memberName": "Nome do Membro",
-      "subsystem": "Subsistema",
-      "type": "Tipo",
+    "deleteBackup": {
       "dialog": {
-        "addMembers": {
-          "title": "Adicionar Membros",
-          "success": "Membros com identificadores: {identifiers} adicionados a este grupo global"
-        },
-        "deleteMember": {
-          "title": "Deletar Membro",
-          "confirmation": "Tem certeza de que deseja deletar o membro do grupo com identificador \"{identifier}\" deste grupo global? Entre o código do membro para confirmar.",
-          "placeholder": "Digite o Código do Membro",
-          "success": "Membro com identificador \"{identifier}\" deletado deste grupo global"
-        }
-      }
+        "confirmation": "Are you sure you want to delete backup {file}?",
+        "title": "Are you sure?"
+      },
+      "success": "Backup {file} deleted"
     },
-    "globalResources": {
-      "addGlobalGroup": "Adicionar Grupo Global",
-      "globalGroupSuccessfullyAdded": "Grupo global adicionado com sucesso.",
-      "code": "Código",
-      "description": "Descrição",
-      "globalGroups": "Grupos Globais",
-      "memberCount": "Contagem de Membros",
-      "updated": "Atualizado"
-    },
+    "restoreFromBackup": {
+      "dialog": {
+        "confirmation": "Are you sure you want to restore from {file}?",
+        "title": "Are you sure?"
+      },
+      "success": "Configuration restored from {file}"
+    }
+  },
+  "customValidation": {
+    "invalidUrl": "URL is invalid, examples of valid URL formats: 'http://www.example.com', 'https://www.example.com'"
+  },
+  "error_code": {
+    "certificate_profile_info_class_not_found": "Certificate profile info class was not found",
+    "certification_service_not_found": "Certification service not found.",
+    "configuration_not_found": "Configuration Source not found",
+    "configuration_part_file_not_found": "Configuration part file not found",
+    "configuration_part_validation_failed": "Configuration part validation failed",
+    "configuration_part_validator_not_found": "Configuration part validator not found",
+    "error_activating_signing_key": "Error activating signing key",
+    "error_deleting_signing_key": "Error deleting signing key",
+    "error_recreating_anchor": "Error re-creating anchor file",
+    "global_group_exists": "Global group with the same code already exists.",
+    "global_group_not_found": "Global group by given code does not exist",
+    "init_already_initialized": "Central server Initialization failed, already fully initialized",
+    "init_invalid_params": "Empty, missing or redundant parameters provided for initialization",
+    "init_signer_pin_policy_failed": "Token pin policy failure at Signer",
+    "init_software_token_failed": "Software token initialization failed",
+    "instance_identifier_not_set": "System parameter for instance identifier not set",
+    "intermediate_ca_not_found": "Intermediate CA not found",
+    "invalid_certificate": "Invalid X.509 certificate",
+    "invalid_member_id": "Invalid member id",
+    "invalid_pagination_properties": "Pagination has invalid properties",
+    "invalid_service_provider_id": "Invalid service provider id",
+    "invalid_sort_properties": "Invalid sort parameter",
+    "invalid_subsystem_id": "Invalid subsystem id",
+    "invalid_url": "Invalid url",
+    "key_generation_failed": "Signing key generation failed",
+    "management_request_cannot_register_owner": "Cannot register owner as a client",
+    "management_request_client_already_owner": "Client is already owner of the security server",
+    "management_request_client_already_registered": "Client already registered to a server",
+    "management_request_client_registration_not_found": "Client registration does not exist",
+    "management_request_exists": "A pending management request already exists.",
+    "management_request_invalid_auth_certificate": "Invalid authentication certificate",
+    "management_request_invalid_state": "Requested operation can not be applied in this state",
+    "management_request_invalid_state_for_approval": "Management request can not be approved",
+    "management_request_member_not_found": "Member does not exist",
+    "management_request_not_found": "No management request with the specified id found.",
+    "management_request_not_supported": "Unknown management request type",
+    "management_request_owner_must_be_client": "Owner is not registered as client on the security server",
+    "management_request_owner_must_be_member": "Owner must be a member",
+    "management_request_security_server_exists": "Certificate is already registered.",
+    "management_request_server_code_exists": "Member already owns a security server with server code",
+    "management_request_server_not_found": "Security server not found",
+    "management_request_server_owner_not_found": "Security server owner not found",
+    "management_request_unknown_type": "Unknown request type",
+    "management_service_provider_not_set": "Management service provider not set",
+    "member_class_exists": "Member class with the same code already exists.",
+    "member_class_is_in_use": "Cannot delete member class: Found X-Road members belonging to the class. Only classes with no registered members can be deleted.",
+    "member_class_not_found": "No member class with the specified code found.",
+    "member_exists": "Member with the same code already exists.",
+    "member_not_found": "No member with the specified code/id found.",
+    "no_configuration_signing_keys_configured": "No configuration signing keys configured",
+    "ocsp_responder_not_found": "OCSP Responder not found",
+    "owners_global_group_cannot_be_deleted": "Cannot perform delete action on server owners group",
+    "owners_global_group_member_cannot_be_deleted": "Cannot perform delete action on server owners group member",
+    "signer_proxy_error": "Signer proxy exception",
+    "signing_key_action_not_possible": "Signing key action not possible",
+    "signing_key_not_found": "Signing key not found",
+    "ss_auth_certificate_not_found": "Authentication certificate not found",
+    "subsystem_already_registered_to_security_server": "Subsystem already registered to the security server",
+    "subsystem_exists": "Subsystem with the same code already exists.",
+    "subsystem_not_found": "Subsystem with specified code not found.",
+    "subsystem_not_registered_to_security_server": "Subsystem is not registered to the given security server.",
+    "subsystem_registered_and_cannot_be_deleted": "Cannot delete already registered subsystem.",
+    "timestamping_authority_not_found": "Timestamping authority not found",
+    "token_action_not_possible": "Token action not possible",
+    "token_activation_failed": "Token activation failed",
+    "token_deactivation_failed": "Token deactivation failed",
+    "token_fetch_failed": "Error getting tokens",
+    "token_incorrect_pin_format": "Incorrect PIN format",
+    "token_invalid_characters": "The provided pin code contains invalid characters",
+    "token_not_found": "Token not found",
+    "token_pin_final_try": "Tries left: 1",
+    "token_pin_locked": "Token PIN locked",
+    "token_weak_pin": "The provided pin code was too weak",
+    "unknown_configuration_part": "Unknown configuration part",
+    "malformed_anchor": "Malformed anchor file",
+    "trusted_anchor_verification_failed": "Trusted anchor verification failed",
+    "trusted_anchor_not_found": "Trusted anchor not found",
+    "internal_error": "Internal error. See server logs for more details",
+    "invalid_parameters": "Validation failure",
+    "security_server_not_found": "Security server not found",
+    "invalid_encoded_id": "Invalid encoded id",
+    "id_not_a_number": "Id is not a number",
+    "api_key_not_found": "Api key not found",
+    "invalid_role": "Invalid role",
+    "invalid_file_content_type": "Invalid content type of uploaded file",
+    "invalid_file_extension": "Invalid file extension",
+    "double_file_extension": "Double file extension is not allowed",
+    "invalid_filename": "Invalid filename",
+    "invalid_backup_file": "Invalid backup file",
+    "backup_file_not_found": "Backup was not found",
+    "backup_generation_failed": "Failed to generate backup",
+    "generate_backup_interrupted": "Backup generation has been interrupted",
+    "restore_process_failed": "Restore process failed",
+    "backup_restore_interrupted": "Backup restoration has been interrupted",
+    "backup_deletion_failed": "Failed to delete backup",
+    "resource_read_failed": "Failed to read resource",
+    "conf_verification.anchor_not_for_external_source": "Configuration verification failed: anchor_not_for_external_source",
+    "conf_verification.missing_private_params": "Configuration verification failed: missing_private_params",
+    "conf_verification.other": "Configuration verification failed: other",
+    "conf_verification.outdated": "Configuration verification failed: outdated",
+    "conf_verification.signature_invalid": "Configuration verification failed: signature_invalid",
+    "conf_verification.unreachable": "Configuration verification failed: unreachable",
+    "cannot_add_member_to_owners_group": "Cannot add members to server owner group",
+    "validation_failure": "Validation failure",
+    "invalid_distinguished_name": "Invalid distinguished name",
+    "generate_key_cert_interrupted": "Key and certificate generation has been interrupted",
+    "key_and_cert_generation_failed": "Failed to generate TLS key and certificate",
+    "csr_generation_failed": "CSR generation failed",
+    "cannot_convert_bytes_to_certificate": "Cannot convert bytes to certificate",
+    "certificate_writing_failed": "Writing certificate to file failed",
+    "cannot_read_certificate": "Cannot read TLS certificate",
+    "key_not_found": "The imported certificate does not match the TLS key",
+    "certificate_already_exists": "The imported certificate already exists",
+    "certificate_import_failed": "Cannot import TLS certificate"
+  },
+  "fields": {
     "init": {
-      "address": {
-        "info": "Nome DNS público do servidor central ou endereço IP externo. Usado para conexões de entrada da rede externa para o servidor central."
-      },
-      "csIdentification": "Identificação do Servidor Central",
-      "initialConfiguration": "Configuração Inicial",
-      "instanceIdentifier": {
-        "info": "Código da instância X-Road, identifica unicamente esta instância X-Road."
-      },
-      "notification": "O Servidor Central foi inicializado! Continue agora com a configuração completa.",
-      "pin": {
-        "info": "PIN para acesso ao token de software.",
-        "pinMatchError": "Confirmação da senha não corresponde",
-        "repeat": "Repetir PIN"
-      },
-      "softwareToken": "Token de Software"
+      "address": "Central Server Address",
+      "confirmPin": "Repeat PIN",
+      "identifier": "Instance Identifier",
+      "pin": "PIN",
+      "repeatPin": "Repeat PIN"
     },
-    "keys": {
-      "title": "Chaves de Assinatura",
-      "addKey": "Adicionar chave",
-      "created": "Criado",
-      "logIn": "Entrar",
-      "logOut": "Sair",
-      "signKey": "Assinar chave",
-      "token": "Token:",
-      "dialog": {
-        "delete": {
-          "title": "Deletar chave",
-          "text": "Deletar a chave '{label}'?",
-          "confirmButton": "Deletar",
-          "success": "Chave de assinatura deletada com sucesso"
-        },
-        "add": {
-          "title": "Adicionar chave",
-          "labelField": "Nome amigável da chave",
-          "confirmButton": "Adicionar",
-          "success": "Chave de Assinatura '{label}' adicionada com sucesso. Por favor, não ative a chave imediatamente. Consulte o guia do usuário do Servidor Central antes de ativar a chave."
-        },
-        "activate": {
-          "title": "Ativar chave",
-          "text": "Ativar a chave '{label}'?",
-          "confirmButton": "Ativar",
-          "success": "Chave de Assinatura '{label}' ativada com sucesso"
-        }
-      }
+    "initialServerConf": {
+      "centralServerAddress": "Central Server Address",
+      "instanceIdentifier": "Instance Identifier"
     },
-    "tokens": {
-      "keysInfoMessage": "Um máximo de duas chaves de assinatura de fonte de configuração é permitido em um token de segurança",
-      "logIn": "Entrar",
-      "pin": "PIN do Token",
-      "loginDialog": {
-        "title": "Entrar",
-        "success": "Token acessado"
-      },
-      "logout": {
-        "title": "Sair",
-        "confirmButton": "Sair",
-        "text": "Tem certeza de que deseja sair do token?",
-        "success": "Saiu do token"
-      },
-      "errors": {
-        "Signer": {
-          "PinIncorrect": "PIN inválido"
-        }
-      }
-    },
-    "cert": {
-      "certificate": "Certificado",
-      "hashInfo": "Hash (SHA-256)",
-      "rsaExp": "Expoente da Chave Pública RSA",
-      "rsaModulus": "Módulo da Chave Pública RSA",
-      "keyUsage": {
-        "CRL_SIGN": "Assinar CRL",
-        "DATA_ENCIPHERMENT": "Ciframento de Dados",
-        "DECIPHER_ONLY": "Decifrar Apenas",
-        "DIGITAL_SIGNATURE": "Assinatura Digital",
-        "ENCIPHER_ONLY": "Cifrar Apenas",
-        "KEY_AGREEMENT": "Acordo de Chave",
-        "KEY_CERT_SIGN": "Assinar Certificado",
-        "KEY_ENCIPHERMENT": "Ciframento de Chave",
-        "NON_REPUDIATION": "Não Repúdio"
-      }
-    },
-    "login": {
-      "errorMsg401": "Usuário ou senha incorretos",
-      "generalError": "Falha no login. Por favor, tente novamente.",
-      "logIn": "Entrar",
-      "logOut": "Sair"
-    },
-    "logout": {
-      "idleWarning": "Você esteve inativo por 30 minutos e sua sessão expirou. Por motivos de segurança, você será desconectado.",
-      "sessionExpired": "Sessão expirada"
+    "password": "Password",
+    "username": "Username",
+    "url": "URL",
+    "tokenPin": "Token PIN",
+    "keyLabel": "Key friendly name",
+    "memberCode": "Member Code",
+    "securityServerAddress": "Security server address",
+    "serverCode": "Server code",
+    "securityServerCode": "Security server code"
+  },
+  "filters": {
+    "apply": "Apply",
+    "chooseFilters": "Choose filters",
+    "clearFields": "Clear fields",
+    "groupMembers": {
+      "byClass": "By class",
+      "byCode": "By code",
+      "byInstance": "By instance",
+      "bySubsystem": "By subsystem",
+      "byType": "By type",
+      "class": "Class",
+      "instance": "Instance",
+      "member": "Member",
+      "subsystem": "Subsystem"
     },
     "managementRequests": {
-      "addCertificate": "Adicionar Certificado",
-      "addClient": "Adicionar Cliente",
-      "approved": "Aprovado",
-      "submitted": "Submetido para aprovação",
-      "changeOwner": "Mudar Proprietário",
-      "changeAddress": "Mudar endereço",
-      "clientEnable": "Habilitar cliente",
-      "clientDisable": "Desabilitar cliente",
-      "pending": "Pendente",
-      "rejected": "Rejeitado",
-      "revoked": "Revogado",
-      "unknown": "Desconhecido",
-      "removeCertificate": "Remover Certificado",
-      "removeClient": "Remover Cliente",
-      "securityServerId": "Identificador do Servidor de Segurança",
-      "securityServerOwnerName": "Nome do Proprietário do Servidor de Segurança",
-      "showOnlyPending": "Mostrar apenas solicitações pendentes",
+      "byCreationDate": "By creation date",
+      "byRequestType": "By request type",
+      "byServerCode": "By server code",
+      "byServerOwnerClass": "By server owner class",
+      "byServerOwnerCode": "By server owner code",
+      "byServerOwnerName": "By server owner name",
+      "bySource": "By source",
+      "byStatus": "By status"
+    }
+  },
+  "footer": {
+    "copyright": {
+      "company": "Nordic Institute for Interoperability Solutions (NIIS)",
+      "licenceInfo": "Licence info",
+      "title": "Copyright"
+    },
+    "software": {
+      "feedback": "Feedback",
+      "title": "Software",
+      "versionPrefix": "X-Road"
+    }
+  },
+  "global": {
+    "appTitle": "X-Road Central Server",
+    "pageNotFound": "oops, page not found",
+    "approve": "Approve",
+    "class": "Class",
+    "code": "Code",
+    "created": "Created",
+    "delete": "Delete",
+    "id": "Id",
+    "instance": "Instance",
+    "memberClass": "Member class",
+    "memberCode": "Member code",
+    "memberName": "Member name",
+    "name": "Name",
+    "navigation": {
+      "back": "Back"
+    },
+    "register": "Register",
+    "search": "Search",
+    "server": "Server",
+    "status": "Status",
+    "subsystem": "Subsystem",
+    "type": "Type"
+  },
+  "globalConf": {
+    "globalConf": "Global Configuration",
+    "internalConf": "Internal Configuration",
+    "trustedAnchors": "Trusted Anchor",
+    "cfgParts": {
+      "title": "Configuration Parts",
+      "file": "File",
+      "contentIdentifier": "Content Identifier",
+      "version": "Version",
+      "allVersions": "All versions",
+      "updated": "Updated",
       "dialog": {
-        "approve": {
-          "title": "Aprovar solicitação de gerenciamento",
-          "bodyMessage": "Tem certeza de que deseja aprovar a solicitação de gerenciamento ID {id} do servidor {serverId}?",
-          "successMessage": "Solicitação de gerenciamento ID {id} do {serverId} aprovada"
-        },
-        "decline": {
-          "title": "Recusar solicitação de gerenciamento",
-          "bodyMessage": "Tem certeza de que deseja recusar a solicitação de gerenciamento ID {id} do servidor {serverId}?",
-          "successMessage": "Solicitação de gerenciamento ID {id} do {serverId} recusada"
+        "upload": {
+          "title": "Upload Configuration Part",
+          "uploadConfigurationPart": "Upload the configuration file from your computer",
+          "success": "Configuration Part uploaded successfully."
         }
       }
     },
-    "managementRequestDetails": {
-      "requestInformation": "Informações da Solicitação",
-      "requestId": "ID da Solicitação",
-      "received": "Recebido",
-      "source": "Fonte",
-      "status": "Status",
-      "comments": "Comentários",
-      "securityServerInformation": "Informações do Servidor de Segurança Afetado",
-      "ownerName": "Nome do Proprietário",
-      "ownerClass": "Classe do Proprietário",
-      "ownerCode": "Código do Proprietário",
-      "serverCode": "Código do Servidor",
-      "address": "Endereço",
-      "clientInformation": "Cliente Submetido para Registro",
-      "ownerChangeInformation": "Novo Proprietário Submetido para Registro",
-      "clientDisableInformation": "Cliente Desabilitado",
-      "clientEnableInformation": "Cliente Habilitado",
-      "subsystemCode": "Código do Subsistema",
-      "certificateformation": "Certificado de Autenticação Submetido para Registro",
-      "ca": "CA",
-      "serialNumber": "Número de Série",
-      "subject": "Assunto",
-      "expires": "Expira"
+    "anchor": {
+      "title": "Anchor",
+      "certificateHash": "Certificate Hash (SHA-224)",
+      "created": "Created",
+      "download": "Download",
+      "recreate": "Re-create",
+      "recreateSuccess": "{configurationType} configuration anchor generated successfully"
     },
-    "members": {
-      "addMember": "Adicionar membro",
-      "header": "Membros",
-      "member": {
-        "details": {
-          "addedToGroup": "Adicionado ao grupo",
-          "globalGroups": "Grupos Globais",
-          "group": "Grupo",
-          "ownedServers": "Servidores Proprietários",
-          "server": "Servidor",
-          "enterCode": "Digite o Código do Membro",
-          "deleteMember": "Deletar membro",
-          "confirmDelete": "Tem certeza de que deseja deletar o Membro {member} da configuração do sistema? Digite o código do membro para confirmar.",
-          "editMemberName": "Editar nome do membro",
-          "memberNameSaved": "Nome do membro salvo com sucesso",
-          "memberDeleted": "Membro deletado com sucesso"
-        },
-        "managementRequests": {
-          "created": "Criado",
-          "id": "ID da Req",
-          "showOnlyWaiting": "Mostrar apenas solicitações em espera",
-          "status": "Status",
-          "type": "Tipo de Solicitação"
-        },
-        "pagenavigation": {
-          "details": "Detalhes",
-          "managementRequests": "Solicitações de Gerenciamento",
-          "subsystems": "Subsistemas"
-        },
-        "subsystems": {
-          "addClient": "Adicionar subsistema",
-          "deleteSubsystem": "Deletar Subsistema",
-          "serverOwner": "Proprietário do servidor",
-          "servercode": "Código do servidor",
-          "status": "Status",
-          "subsystemcode": "Código do subsistema",
-          "subsystemSuccessfullyAdded": "Subsistema {subsystemCode} adicionado à configuração do sistema",
-          "areYouSureDelete": "Tem certeza de que deseja deletar o Subsistema {subsystemCode} do membro X-Road {memberId} da configuração do sistema?",
-          "subsystemSuccessfullyDeleted": "Subsistema {subsystemCode} foi deletado da configuração do sistema",
-          "areYouSureUnregister": "Tem certeza de que deseja deletar o Subsistema {subsystemCode} do servidor {serverCode} da configuração do sistema?",
-          "subsystemSuccessfullyUnregistered": "Subsistema {subsystemCode} do servidor {serverCode} foi deletado"
-        }
-      },
-      "memberSuccessfullyAdded": "Membro {memberName} adicionado à configuração do sistema."
+    "downloadUrl": {
+      "title": "Download URL",
+      "urlAddress": "URL Address"
     },
-    "noData": {
-      "loading": "Carregando... Por favor, aguarde",
-      "noBackups": "Nenhum backup ainda",
-      "noCertificate": "Nenhum certificado",
-      "noCertificates": "Nenhum certificado",
-      "noData": "Nenhum dado",
-      "noMatches": "Nenhum item corresponde aos critérios",
-      "noMemberClasses": "Nenhuma classe de membros",
-      "noServices": "Nenhum serviço",
-      "noTokens": "Nenhum token",
-      "noSecurityServers": "Nenhum servidor de segurança"
-    },
-    "securityServers": {
-      "address": "Endereço",
-      "ownerClass": "Classe do Proprietário",
-      "ownerCode": "Código do Proprietário",
-      "ownerName": "Nome do Proprietário",
-      "registered": "Registrado",
-      "unregistered": "Não registrado",
-      "pending": "Aprovação pendente",
-      "disabled": "Desabilitado temporariamente",
-      "securityServer": {
-        "certificationAuthority": "Autoridade de Certificação",
-        "deleteServer": "Deletar servidor",
-        "expires": "Expira",
-        "serialNumber": "Número de Série",
-        "subject": "Assunto",
-        "deleteSecurityServer": "Deletar Servidor de Segurança",
-        "tabs": {
-          "authCertificates": "Certificados de Autenticação",
-          "clients": "Clientes",
-          "details": "Detalhes",
-          "managementRequests": "Solicitações de Gerenciamento"
-        },
-        "dialog": {
-          "deleteAuthCertificate": {
-            "title": "Deletar Certificado de Autenticação",
-            "content": "Tem certeza de que deseja deletar o Certificado de Autenticação Test CA da configuração do sistema? Digite o código do servidor para confirmar.",
-            "securityServerCode": "Digite o Código do Servidor de Segurança",
-            "success": "Certificado de autenticação do servidor de segurança deletado com sucesso"
-          }
-        }
-      },
-      "dialogs": {
-        "editAddress": {
-          "title": "Editar endereço do Servidor de Segurança",
-          "addressField": "Endereço do servidor de segurança",
-          "success": "Endereço do servidor de segurança atualizado com sucesso"
-        },
-        "deleteAddress": {
-          "title": "Deletar Servidor de Segurança",
-          "enterCode": "Digite o Código do Servidor de Segurança",
-          "areYouSure": "Tem certeza de que deseja deletar o Servidor de Segurança {securityServer} da configuração do sistema? Digite o código do servidor para confirmar.",
-          "success": "Servidor de Segurança deletado."
-        }
-      },
-      "serverCode": "Código do Servidor"
-    },
-    "systemSettings": {
-      "centralServerAddress": "Endereço do Servidor Central",
-      "code": "Código",
-      "description": "Descrição",
-      "editCentralServerAddressSuccess": "Endereço do servidor central atualizado com sucesso",
-      "editCentralServerAddressTitle": "Editar Endereço do Servidor Central",
-      "instanceIdentifier": "Identificador da Instância",
-      "managementServices": {
-        "title": "Serviços de Gestão",
-        "securityServer": "Servidor de Segurança dos Serviços de Gestão"
-      },
-      "selectSubsystem": {
-        "title": "Selecionar Subsistema",
-        "search": "Buscar",
-        "name": "Nome",
-        "memberClass": "Classe",
-        "memberCode": "Código",
-        "subsystemCode": "Subsistema",
-        "xroadInstance": "Instância",
-        "type": "Tipo"
-      },
-      "selectSecurityServer": {
-        "title": "Selecionar Servidor de Segurança",
-        "search": "Buscar",
-        "name": "Nome",
-        "memberClass": "Classe",
-        "memberCode": "Código",
-        "subsystemCode": "Subsistema",
-        "xroadInstance": "Instância",
-        "type": "Tipo"
-      },
-      "serviceProvider": {
-        "changedSuccess": "Provedor de serviços alterado com sucesso",
-        "registeredSuccess": "Provedor de serviços de gestão '{subsystemId}' registrado como cliente do servidor de segurança '{securityServerId}'"
-      },
-      "memberClasses": "Classes de Membro",
-      "securityServerOwnerGroupCode": "Código do Grupo de Proprietários do Servidor de Segurança",
-      "serviceProviderIdentifier": "Identificador do Provedor de Serviços",
-      "serviceProviderName": "Nome do Provedor de Serviços",
-      "systemParameters": "Parâmetros do Sistema",
-      "wsdlAddress": "Endereço WSDL",
-      "managementServicesAddress": "Endereço dos Serviços de Gestão",
-      "editMemberClassTitle": "Editar classe de membro",
-      "addMemberClassTitle": "Adicionar classe de membro",
-      "deleteMemberClass": "Deletar classe de membro?",
-      "memberClassSaved": "Classe de membro salva.",
-      "memberClassDeleted": "Classe de membro deletada."
-    },
-    "tlsCertificates": {
-      "managementService": {
-        "title": "Certificado TLS do Serviço de Gestão",
-        "key": "Chave TLS do Serviço de Gestão",
-        "downloadCertificate": "Baixar certificado",
-        "downloadSuccess": "Certificado TLS do serviço de gestão baixado com sucesso",
-        "generateKey": {
-          "button": "Recriar chave",
-          "title": "Chave TLS do Serviço de Gestão",
-          "confirmation": "Gerar uma nova chave TLS do serviço de gestão e certificado?",
-          "explanation": "O sistema gerará uma nova chave TLS do serviço de gestão e um certificado autoassinado, substituindo a chave e o certificado existentes.",
-          "success": "Nova chave TLS do serviço de gestão e certificado gerados com sucesso"
-        },
-        "generateCsr": {
-          "button": "Gerar CSR",
-          "title": "Gerar Pedido de Assinatura de Certificado TLS",
-          "content": "Primeiro, forneça um nome distinto. Em seguida, gere um novo CSR e salve-o em um local seguro",
-          "distinguishedName": "Digite o nome distinto",
-          "example": "CN=meuservidorcentral.example.com, O=Minha Organização, C=EE"
-        },
-        "uploadCertificate": {
-          "button": "Carregar certificado",
-          "title": "Carregar Certificado TLS do Serviço de Gestão",
-          "label": "Carregue o arquivo do certificado do seu computador",
-          "success": "Certificado TLS do serviço de gestão carregado com sucesso"
-        }
-      }
-    },
-    "tab": {
-      "globalConf": {
-        "externalConf": "Configuração Externa",
-        "internalConf": "Configuração Interna",
-        "trustedAnchors": "Âncoras Confiáveis"
-      },
-      "main": {
-        "globalConfiguration": "Configuração Global",
-        "managementRequests": "Solicitações de Gerenciamento",
-        "members": "Membros",
-        "securityServers": "Servidores de Segurança",
-        "settings": "Configurações",
-        "trustServices": "Serviços de Confiança"
-      },
-      "settings": {
-        "apiKeys": "Chaves API",
-        "backupAndRestore": "Backup e Restauração",
-        "globalResources": "Recursos Globais",
-        "systemSettings": "Configurações do Sistema",
-        "tlsCertificates": "Certificados TLS"
-      }
-    },
-    "trustServices": {
-      "addCertificationService": "Adicionar serviço de certificação",
-      "addCASettingsCheckbox": "Esta CA só pode ser usada para autenticação TLS (marque se verdadeiro)",
-      "approvedCertificationService": "Serviço de certificação aprovado",
-      "caSettings": "Configurações da CA",
-      "certificationServices": "Serviços de Certificação",
-      "certImportedSuccessfully": "Certificado importado com sucesso",
-      "certProfileInput": "Informações do perfil do certificado",
-      "certProfileInputExplanation": "Nome de classe totalmente qualificado que implementa a interface ee.ria.xroad.common.certificateprofile.CertificateProfileInfoProvider",
-      "timestampingServices": "Serviços de Carimbo de Tempo",
-      "validFrom": "Válido a partir de",
-      "validTo": "Válido até",
-      "viewCertificate": "Visualizar Certificado",
-      "uploadCertificate": "Carregar o arquivo do certificado do seu computador",
-      "timestampingService": {
-        "url": "URL",
-        "dialog": {
-          "add": {
-            "title": "Adicionar serviço de carimbo de tempo",
-            "success": "Serviço de carimbo de tempo adicionado com sucesso"
+    "trustedAnchor": {
+      "dialog": {
+        "upload": {
+          "confirmation": "Continue with upload?",
+          "field": {
+            "generated": "Generated",
+            "hash": "Hash (SHA-224)"
           },
-          "edit": {
-            "title": "Editar Serviço de Carimbo de Tempo",
-            "uploadCertificate": "Carregar novo certificado",
-            "success": "Serviço de carimbo de tempo editado com sucesso"
-          }
-        },
-        "addedSuccessfully": "Serviço de carimbo de tempo adicionado com sucesso"
-      },
-      "trustService": {
-        "details": {
-          "subjectDistinguishedName": "Nome distinto do assunto",
-          "issuerDistinguishedName": "Nome distinto do emissor"
+          "info": "Trusted anchor details:",
+          "success": "Successfully uploaded Trusted anchor",
+          "title": "Confirm trusted anchor details"
         },
         "delete": {
-          "action": "Deletar serviço de confiança",
-          "confirmationDialog": {
-            "title": "Tem certeza?",
-            "message": "Tem certeza de que deseja deletar o serviço de confiança \"{name}\"?"
-          },
-          "success": "Serviço de confiança deletado com sucesso"
-        },
-        "settings": {
-          "tlsAuth": "Esta CA só pode ser usada para autenticação TLS",
-          "certProfile": "Informações do perfil do certificado (nome de classe totalmente qualificado que implementa a interface ee.ria.xroad.common.CertificateProfileInfoProvider)",
-          "saveSuccess": "Configurações da CA salvas com sucesso"
-        },
-        "ocspResponders": {
-          "url": "URL",
-          "add": {
-            "dialog": {
-              "title": "Adicionar Respondedor OCSP"
-            },
-            "success": "Respondedor OCSP adicionado com sucesso"
-          },
-          "edit": {
-            "dialog": {
-              "title": "Editar Respondedor OCSP",
-              "uploadCertificate": "Carregar novo certificado"
-            },
-            "success": "Respondedor OCSP editado com sucesso"
-          },
-          "delete": {
-            "confirmationDialog": {
-              "message": "Tem certeza de que deseja deletar o Respondedor OCSP com a URL {url}?",
-              "title": "Tem certeza?"
-            },
-            "success": "Respondedor OCSP deletado com sucesso"
-          }
-        },
-        "intermediateCas": {
-          "intermediateCa": "CA Intermediária",
-          "add": {
-            "dialog": {
-              "title": "Adicionar CAs Intermediárias"
-            },
-            "success": "CA Intermediária adicionada com sucesso"
-          },
-          "delete": {
-            "confirmationDialog": {
-              "message": "Tem certeza de que deseja deletar a CA Intermediária {name}?",
-              "title": "Tem certeza?"
-            },
-            "success": "CA Intermediária deletada com sucesso"
-          }
-        },
-        "timestampingService": {
-          "url": "Url",
-          "timestampingInterval": "Intervalo de carimbo de tempo",
-          "timestampingIntervalMinutes": "{min} minuto(s)",
-          "cost": "Custo",
-          "costValues": {
-            "FREE": "Grátis",
-            "PAID": "Pago",
-            "UNDEFINED": "Indefinido"
-          },
-          "delete": {
-            "dialog": {
-              "title": "Tem certeza?",
-              "message": "Tem certeza de que deseja deletar o serviço de carimbo de tempo com a URL {url}?"
-            },
-            "success": "Serviço de carimbo de tempo deletado com sucesso"
-          }
-        },
-        "pagenavigation": {
-          "details": "Detalhes",
-          "settings": "Configurações da CA",
-          "ocspResponders": "Respondedores OCSP",
-          "intermediateCas": "CAs Intermediárias"
-        }
-      }
-    },
-    "validationError": {
-      "AssertFalse": "o valor deve ser 'falso'",
-      "AssertTrue": "o valor deve ser 'verdadeiro'",
-      "DecimalMax": "o valor numérico excede o máximo permitido",
-      "DecimalMin": "o valor numérico está abaixo do mínimo permitido",
-      "Digits": "o valor deve conter apenas dígitos",
-      "Email": "o valor não atende ao formato de e-mail",
-      "Future": "o valor de data/hora deve estar no futuro",
-      "FutureOrPresent": "o valor de data/hora deve ser agora ou no futuro",
-      "IdentifierChars": "O identificador de instância não deve conter dois-pontos (:), ponto e vírgula (;), barras (/\\) ou sinais de porcentagem (%)",
-      "IdentifierCharsField": "Use apenas caracteres identificadores válidos",
-      "Max": "o valor numérico excede o máximo permitido",
-      "Min": "o valor numérico está abaixo do mínimo permitido",
-      "Negative": "o valor numérico deve ser menor que zero",
-      "NegativeOrZero": "o valor numérico deve ser menor ou igual a zero",
-      "NoBackslashes": "o valor não deve conter símbolos de barra invertida (\\)",
-      "NoColons": "o valor não deve conter símbolos de dois-pontos (:)",
-      "NoForwardslashes": "o valor não deve conter barras (/)",
-      "NoPercents": "o valor não deve conter símbolos de porcentagem (%)",
-      "NoSemicolons": "o valor não deve conter ponto e vírgula (;)",
-      "Normalized": "o valor deve estar normalizado",
-      "NotBlank": "o valor não deve estar em branco",
-      "NotEmpty": "o valor não deve estar vazio",
-      "NotNull": "o valor é necessário",
-      "Null": "o valor não deve ser definido",
-      "Past": "o valor de data/hora deve estar no passado",
-      "PastOrPresent": "o valor de data/hora deve ser agora ou no passado",
-      "Pattern": "o valor não corresponde ao formato necessário",
-      "Positive": "o valor numérico deve ser maior que zero",
-      "PositiveOrZero": "o valor numérico deve ser maior ou igual a zero",
-      "Size": "o valor não atende aos requisitos de comprimento",
-      "SizeField": "o valor não atende aos requisitos de comprimento",
-      "ValidHostAddress": "Endereço IP público ou nome de domínio totalmente qualificado (por exemplo, host.example.org) necessário",
-      "ValidHostAddressField": "Endereço IP válido ou nome de domínio totalmente qualificado necessário"
-    },
-    
-    "validation": {
-      "messages": {
-        "is": "O campo {field} deve ter um valor de \"{other}\""
-      }
-    },
-    "status": {
-      "signer_error": "Falha na invocação do cliente assinador",
-      "global_conf_generation": {
-        "status_not_found": "Status de gerações de configuração global é desconhecido",
-        "failing": "Geração de configuração global falhando desde {0}",
-        "global_conf_expired": "Configuração global expirada"
-      },
-      "signing_key": {
-        "internal": {
-          "missing": "Assinatura da configuração interna falhou - chave ativa ausente",
-          "token_not_found": "Assinatura da configuração interna falhou - chave ativa não encontrada",
-          "token_not_active": "Assinatura da configuração interna falhou - PIN da chave ativa não inserido",
-          "key_not_available": "Assinatura da configuração interna falhou - chave ativa não disponível"
-        },
-        "external": {
-          "missing": "Assinatura da configuração externa falhou - chave ativa ausente",
-          "token_not_found": "Assinatura da configuração externa falhou - chave ativa não encontrada",
-          "token_not_active": "Assinatura da configuração externa falhou - PIN da chave ativa não inserido",
-          "key_not_available": "Assinatura da configuração externa falhou - chave ativa não disponível"
+          "confirmation": "Delete {identifier} anchor with Hash (SHA-224) {hash}?",
+          "success": "Successfully deleted Trusted anchor",
+          "title": "Delete Anchor"
         }
       }
     }
-  }    
+  },
+  "globalGroup": {
+    "added": "Added",
+    "addMembers": "Add Members",
+    "areYouSure": "Are you sure you want to remove the global group {group}?",
+    "code": "Code",
+    "class": "Class",
+    "deleteGroup": "Delete Group",
+    "description": "Description",
+    "descriptionSaved": "Description saved successfully.",
+    "editDescription": "Edit Description",
+    "groupDeletedSuccessfully": "Global group deleted successfully.",
+    "groupMembers": "Group members ({memberCount})",
+    "instance": "Instance",
+    "memberName": "Member Name",
+    "subsystem": "Subsystem",
+    "type": "Type",
+    "dialog": {
+      "addMembers": {
+        "title": "Add Members",
+        "success": "Members with identifiers: {identifiers} are added to this global group"
+      },
+      "deleteMember": {
+        "title": "Delete Member",
+        "confirmation": "Are you sure you want to delete the group member with identifier \"{identifier}\" from this global group? Enter the member code to confirm.",
+        "placeholder": "Enter Member Code",
+        "success": "Member with identifier \"{identifier}\" is deleted from this global group"
+      }
+    }
+  },
+  "globalResources": {
+    "addGlobalGroup": "Add Global Group",
+    "globalGroupSuccessfullyAdded": "Global group added successfully.",
+    "code": "Code",
+    "description": "Description",
+    "globalGroups": "Global Groups",
+    "memberCount": "Member Count",
+    "updated": "Updated"
+  },
+  "init": {
+    "address": {
+      "info": "Central server’s public DNS name or external IP address. Used for inbound connections from the external network to the central server."
+    },
+    "csIdentification": "Central Server Identification",
+    "initialConfiguration": "Initial Configuration",
+    "instanceIdentifier": {
+      "info": "X-Road instance code, uniquely identifies this X-Road instance."
+    },
+    "notification": "The Central Server initialized! Now continue with the full configuration.",
+    "pin": {
+      "info": "PIN for accessing software token.",
+      "pinMatchError": "Password confirmation does not match",
+      "repeat": "Repeat PIN"
+    },
+    "softwareToken": "Software Token"
+  },
+  "keys": {
+    "title": "Signing Keys",
+    "addKey": "Add key",
+    "created": "Created",
+    "logIn": "Log in",
+    "logOut": "Log out",
+    "signKey": "Sign key",
+    "token": "Token:",
+    "dialog": {
+      "delete": {
+        "title": "Delete key",
+        "text": "Delete key '{label}'?",
+        "confirmButton": "Delete",
+        "success": "Signing key deleted successfully"
+      },
+      "add": {
+        "title": "Add key",
+        "labelField": "Key friendly name",
+        "confirmButton": "Add",
+        "success": "Sign Key '{label}' added successfully. Please do not activate the key immediately. Please see the Central Server user guide before activating the key."
+      },
+      "activate": {
+        "title": "Activate key",
+        "text": "Activate key '{label}'?",
+        "confirmButton": "Activate",
+        "success": "Sign Key '{label}' activated successfully"
+      }
+    }
+  },
+  "tokens": {
+    "keysInfoMessage": "A maximum of two configuration source signing keys is allowed on a security token",
+    "logIn": "Log in",
+    "pin": "Token PIN",
+    "loginDialog": {
+      "title": "Log in",
+      "success": "Logged in token"
+    },
+    "logout": {
+      "title": "Log out",
+      "confirmButton": "Log out",
+      "text": "Are you sure you want to log out from the token?",
+      "success": "Logged out of token"
+    },
+    "errors": {
+      "Signer": {
+        "PinIncorrect": "Invalid PIN"
+      }
+    }
+  },
+  "cert": {
+    "certificate": "Certificate",
+    "hashInfo": "Hash (SHA-256)",
+    "rsaExp": "RSA Public Key Exponent",
+    "rsaModulus": "RSA Public Key Modulus",
+    "keyUsage": {
+      "CRL_SIGN": "CRL Sign",
+      "DATA_ENCIPHERMENT": "Data Encipherment",
+      "DECIPHER_ONLY": "Decipher Only",
+      "DIGITAL_SIGNATURE": "Digital Signature",
+      "ENCIPHER_ONLY": "Encipher Only",
+      "KEY_AGREEMENT": "Key Agreement",
+      "KEY_CERT_SIGN": "Certificate Sign",
+      "KEY_ENCIPHERMENT": "Key Encipherment",
+      "NON_REPUDIATION": "Non Repudiation"
+    }
+  },
+  "login": {
+    "errorMsg401": "Wrong username or password",
+    "generalError": "Login failed. Please try again.",
+    "logIn": "Log in",
+    "logOut": "Log out"
+  },
+  "logout": {
+    "idleWarning": "You have been idle for 30 minutes and your session has expired. For security reasons, you will be logged out.",
+    "sessionExpired": "Session expired"
+  },
+  "managementRequests": {
+    "addCertificate": "Add Certificate",
+    "addClient": "Add Client",
+    "approved": "Approved",
+    "submitted": "Submitted for approval",
+    "changeOwner": "Change Owner",
+    "changeAddress": "Change address",
+    "clientEnable": "Enable client",
+    "clientDisable": "Disable client",
+    "pending": "Pending",
+    "rejected": "Rejected",
+    "revoked": "Revoked",
+    "unknown": "Unknown",
+    "removeCertificate": "Remove Certificate",
+    "removeClient": "Remove Client",
+    "securityServerId": "Server Identifier",
+    "securityServerOwnerName": "Server Owner Name",
+    "showOnlyPending": "Show only pending requests",
+    "dialog": {
+      "approve": {
+        "title": "Approve management request",
+        "bodyMessage": "Are you sure you want to approve the management request ID {id} from server {serverId}?",
+        "successMessage": "Management request ID {id} from {serverId} approved"
+      },
+      "decline": {
+        "title": "Decline management request",
+        "bodyMessage": "Are you sure you want to decline the management request ID {id} from server {serverId}?",
+        "successMessage": "Management request ID {id} from {serverId} declined"
+      }
+    }
+  },
+  "managementRequestDetails": {
+    "requestInformation": "Request Information",
+    "requestId": "Request ID",
+    "received": "Received",
+    "source": "Source",
+    "status": "Status",
+    "comments": "Comments",
+    "securityServerInformation": "Affected Security Server Information",
+    "ownerName": "Owner Name",
+    "ownerClass": "Owner Class",
+    "ownerCode": "Owner Code",
+    "serverCode": "Server Code",
+    "address": "Address",
+    "clientInformation": "Client Submitted for Registration",
+    "ownerChangeInformation": "New Owner Submitted for Registration",
+    "clientDisableInformation": "Disabled client",
+    "clientEnableInformation": "Enabled client",
+    "subsystemCode": "Subsystem Code",
+    "certificateformation": "Authentication Certificate Submitted for Registration",
+    "ca": "CA",
+    "serialNumber": "Serial number",
+    "subject": "Subject",
+    "expires": "Expires"
+  },
+  "members": {
+    "addMember": "Add member",
+    "header": "Members",
+    "member": {
+      "details": {
+        "addedToGroup": "Added to the group",
+        "globalGroups": "Global Groups",
+        "group": "Group",
+        "ownedServers": "Owned Servers",
+        "server": "Server",
+        "enterCode": "Enter Member Code",
+        "deleteMember": "Delete member",
+        "confirmDelete": "Are you sure you want to delete the Member {member} from the system configuration? Enter the member code to confirm.",
+        "editMemberName": "Edit Member's name",
+        "memberNameSaved": "Member name successfully saved",
+        "memberDeleted": "Member deleted successfully"
+      },
+      "managementRequests": {
+        "created": "Created",
+        "id": "Req id",
+        "showOnlyWaiting": "Show only waiting requests",
+        "status": "Status",
+        "type": "Request type"
+      },
+      "pagenavigation": {
+        "details": "Details",
+        "managementRequests": "Management Requests",
+        "subsystems": "Subsystems"
+      },
+      "subsystems": {
+        "addClient": "Add subsystem",
+        "deleteSubsystem": "Delete Subsystem",
+        "serverOwner": "Server owner",
+        "servercode": "Server code",
+        "status": "Status",
+        "subsystemcode": "Subsystem code",
+        "subsystemSuccessfullyAdded": "Subsystem {subsystemCode} is added to the system configuration",
+        "areYouSureDelete": "Are you sure you want to delete the Subsystem {subsystemCode} from the X-Road member {memberId} from the system configuration?",
+        "subsystemSuccessfullyDeleted": "Subsystem {subsystemCode} has been deleted from the system configuration",
+        "areYouSureUnregister": "Are you sure you want to delete the Subsystem {subsystemCode} from server {serverCode} from the system configuration?",
+        "subsystemSuccessfullyUnregistered": "Subsystem {subsystemCode} from server {serverCode} has been deleted"
+      }
+    },
+    "memberSuccessfullyAdded": "Member {memberName} is added to the system configuration."
+  },
+  "noData": {
+    "loading": "Loading... Please wait",
+    "noBackups": "No backups yet",
+    "noCertificate": "No certificate",
+    "noCertificates": "No certificates",
+    "noData": "No data",
+    "noMatches": "No items matching criteria",
+    "noMemberClasses": "No member classes",
+    "noServices": "No services",
+    "noTokens": "No tokens",
+    "noSecurityServers": "No security servers"
+  },
+  "securityServers": {
+    "address": "Address",
+    "ownerClass": "Owner Class",
+    "ownerCode": "Owner Code",
+    "ownerName": "Owner Name",
+    "registered": "Registered",
+    "unregistered": "Unregistered",
+    "pending": "Pending approval",
+    "disabled": "Temporarily disabled",
+    "securityServer": {
+      "certificationAuthority": "Certification Authority",
+      "deleteServer": "Delete server",
+      "expires": "Expires",
+      "serialNumber": "Serial Number",
+      "subject": "Subject",
+      "deleteSecurityServer": "Delete Security Server",
+      "tabs": {
+        "authCertificates": "Authentication Certificates",
+        "clients": "Clients",
+        "details": "Details",
+        "managementRequests": "Management Requests"
+      },
+      "dialog": {
+        "deleteAuthCertificate": {
+          "title": "Delete Authentication Certificate",
+          "content": "Are you sure you want to delete the Authentication Certificate Test CA from the system configuration? Enter the server code to confirm.",
+          "securityServerCode": "Enter Security Server Code",
+          "success": "Security server authentication certificate deleted successfully"
+        }
+      }
+    },
+    "dialogs": {
+      "editAddress": {
+        "title": "Edit Security Server address",
+        "addressField": "Security server address",
+        "success": "Security server address successfully updated"
+      },
+      "deleteAddress": {
+        "title": "Delete Security Server",
+        "enterCode": "Enter Security Server Code",
+        "areYouSure": "Are you sure you want to delete the Security Server {securityServer} from the system configuration? Enter the server code to confirm.",
+        "success": "Security Server deleted."
+      }
+    },
+    "serverCode": "Server Code"
+  },
+  "systemSettings": {
+    "centralServerAddress": "Central Server Address",
+    "code": "Code",
+    "description": "Description",
+    "editCentralServerAddressSuccess": "Central Server address successfully updated",
+    "editCentralServerAddressTitle": "Edit Central Server address",
+    "instanceIdentifier": "Instance Identifier",
+    "managementServices": {
+      "title": "Management Services",
+      "securityServer": "Management Services' Security Server"
+    },
+    "selectSubsystem": {
+      "title": "Select Subsystem",
+      "search": "Search",
+      "name": "Name",
+      "memberClass": "Class",
+      "memberCode": "Code",
+      "subsystemCode": "Subsystem",
+      "xroadInstance": "Instance",
+      "type": "Type"
+    },
+    "selectSecurityServer": {
+      "title": "Select Security Server",
+      "search": "Search",
+      "name": "Name",
+      "memberClass": "Class",
+      "memberCode": "Code",
+      "subsystemCode": "Subsystem",
+      "xroadInstance": "Instance",
+      "type": "Type"
+    },
+    "serviceProvider": {
+      "changedSuccess": "Service Provider changed successfully",
+      "registeredSuccess": "Management service provider '{subsystemId}' registered as security server '{securityServerId}' client"
+    },
+    "memberClasses": "Member Classes",
+    "securityServerOwnerGroupCode": "Security Server Owners Group Code",
+    "serviceProviderIdentifier": "Service Provider Identifier",
+    "serviceProviderName": "Service Provider Name",
+    "systemParameters": "System Parameters",
+    "wsdlAddress": "WSDL Address",
+    "managementServicesAddress": "Management Services Address",
+    "editMemberClassTitle": "Edit member class",
+    "addMemberClassTitle": "Add member class",
+    "deleteMemberClass": "Delete member class?",
+    "memberClassSaved": "Member class saved.",
+    "memberClassDeleted": "Member class deleted."
+  },
+  "tlsCertificates": {
+    "managementService": {
+      "title": "Management Service TLS certificate",
+      "key": "Management Service TLS key",
+      "downloadCertificate": "Download certificate",
+      "downloadSuccess": "Management service TLS certificate successfully downloaded",
+      "generateKey": {
+        "button": "Re-create key",
+        "title": "Management Service TLS key",
+        "confirmation": "Generate a new Management service TLS key and certificate?",
+        "explanation": "The system will generate a new Management service TLS key and a self-signed certificate, replacing the existing key and certificate.",
+        "success": "New Management service TLS key and certificate generated successfully"
+      },
+      "generateCsr": {
+        "button": "Generate CSR",
+        "title": "Generate TLS Certificate Signing Request",
+        "content": "First, provide a distinguished name. Then, generate a new CSR and save it into a safe place",
+        "distinguishedName": "Enter Distinguished name",
+        "example": "CN=mycentralserver.example.com, O=My Organization, C=EE"
+      },
+      "uploadCertificate": {
+        "button": "Upload certificate",
+        "title": "Upload Management Service TLS certificate",
+        "label": "Upload the certificate file from your computer",
+        "success": "Management service TLS certificate successfully uploaded"
+      }
+    }
+  },
+  "tab": {
+    "globalConf": {
+      "externalConf": "External Configuration",
+      "internalConf": "Internal Configuration",
+      "trustedAnchors": "Trusted Anchors"
+    },
+    "main": {
+      "globalConfiguration": "Global Configuration",
+      "managementRequests": "Management Requests",
+      "members": "Members",
+      "securityServers": "Security Servers",
+      "settings": "Settings",
+      "trustServices": "Trust Services"
+    },
+    "settings": {
+      "apiKeys": "API Keys",
+      "backupAndRestore": "Backup And Restore",
+      "globalResources": "Global Resources",
+      "systemSettings": "System Settings",
+      "tlsCertificates": "TLS Certificates"
+    }
+  },
+  "trustServices": {
+    "addCertificationService": "Add certification service",
+    "addCASettingsCheckbox": "This CA can only be used for TLS authentication (mark if true)",
+    "approvedCertificationService": "Approved Certification service",
+    "caSettings": "CA Settings",
+    "certificationServices": "Certification Services",
+    "certImportedSuccessfully": "Certificate imported successfully",
+    "certProfileInput": "Certificate profile info",
+    "certProfileInputExplanation": "Fully qualified class name that implements the ee.ria.xroad.common.certificateprofile.CertificateProfileInfoProvider interface",
+    "timestampingServices": "Timestamping Services",
+    "validFrom": "Valid from",
+    "validTo": "Valid to",
+    "viewCertificate": "View Certificate",
+    "uploadCertificate": "Upload the certificate file from your computer",
+    "timestampingService": {
+      "url": "URL",
+      "dialog": {
+        "add": {
+          "title": "Add timestamping service",
+          "success": "Timestamping service added successfully"
+        },
+        "edit": {
+          "title": "Edit Timestamping Service",
+          "uploadCertificate": "Upload new certificate",
+          "success": "Timestamping service edited successfully"
+        }
+      },
+      "addedSuccessfully": "Timestamping service added successfully"
+    },
+    "trustService": {
+      "details": {
+        "subjectDistinguishedName": "Subject distinguished name",
+        "issuerDistinguishedName": "Issuer distinguished name"
+      },
+      "delete": {
+        "action": "Delete trust service",
+        "confirmationDialog": {
+          "title": "Are you sure?",
+          "message": "Are you sure you want to delete the trust service \"{name}\"?"
+        },
+        "success": "Trust service deleted successfully"
+      },
+      "settings": {
+        "tlsAuth": "This CA can only be used for TLS authentication",
+        "certProfile": "Certificate profile info (fully qualified class name that implements the ee.ria.xroad.common.CertificateProfileInfoProvider interface)",
+        "saveSuccess": "CA Settings successfully saved"
+      },
+      "ocspResponders": {
+        "url": "URL",
+        "add": {
+          "dialog": {
+            "title": "Add OCSP Responder"
+          },
+          "success": "OCSP Responder added successfully"
+        },
+        "edit": {
+          "dialog": {
+            "title": "Edit OCSP Responder",
+            "uploadCertificate": "Upload new certificate"
+          },
+          "success": "OCSP Responder edited successfully"
+        },
+        "delete": {
+          "confirmationDialog": {
+            "message": "Are you sure you want to delete the OCSP Responder with the URL {url}?",
+            "title": "Are you sure?"
+          },
+          "success": "OCSP Responder deleted successfully"
+        }
+      },
+      "intermediateCas": {
+        "intermediateCa": "Intermediate CA",
+        "add": {
+          "dialog": {
+            "title": "Add Intermediate CAs"
+          },
+          "success": "Intermediate CA added successfully"
+        },
+        "delete": {
+          "confirmationDialog": {
+            "message": "Are you sure you want to delete the Intermediate CA {name}?",
+            "title": "Are you sure?"
+          },
+          "success": "Intermediate CA deleted successfully"
+        }
+      },
+      "timestampingService": {
+        "url": "Url",
+        "timestampingInterval": "Timestamping interval",
+        "timestampingIntervalMinutes": "{min} minute(s)",
+        "cost": "Cost",
+        "costValues": {
+          "FREE": "Free",
+          "PAID": "Paid",
+          "UNDEFINED": "Undefined"
+        },
+        "delete": {
+          "dialog": {
+            "title": "Are you sure?",
+            "message": "Are you sure you want to delete the Timestamping service with the URL {url}?"
+          },
+          "success": "Timestamping service deleted successfully"
+        }
+      },
+      "pagenavigation": {
+        "details": "Details",
+        "settings": "CA Settings",
+        "ocspResponders": "OCSP Responders",
+        "intermediateCas": "Intermediate CAs"
+      }
+    }
+  },
+  "validationError": {
+    "AssertFalse": "value should be 'false'",
+    "AssertTrue": "value should be 'true'",
+    "DecimalMax": "numeric value exceeds the maximum allowed",
+    "DecimalMin": "numeric value is under the miminum allowed",
+    "Digits": "value should contain only digits",
+    "Email": "value does not meet the email format",
+    "Future": "datetime value should be in the future",
+    "FutureOrPresent": "datetime value should be now or in the future",
+    "IdentifierChars": "Instance identifier should not contain colon (:), semicolon (;), forward or backward slashes (/\\) or percent signs (%)",
+    "IdentifierCharsField": "Use valid identifier characters only",
+    "Max": "numeric value exceeds the maximum allowed",
+    "Min": "numeric value is under the minimum allowed",
+    "Negative": "numeric value should be less than zero",
+    "NegativeOrZero": "numeric value should be less or equal to zero",
+    "NoBackslashes": "value should not contain backslash (\\) symbols",
+    "NoColons": "value should not contain colon (:) symbols",
+    "NoForwardslashes": "value should not contain forward slash (/) symbols",
+    "NoPercents": "value should not contain percentage (%) symbols",
+    "NoSemicolons": "value should not contain semicolon (;) symbols",
+    "Normalized": "value should be normalized",
+    "NotBlank": "value should not be blank",
+    "NotEmpty": "value should not be empty",
+    "NotNull": "value is required",
+    "Null": "value should not be set",
+    "Past": "datetime value should be in the past",
+    "PastOrPresent": "datetime value should be now or in the past",
+    "Pattern": "value did not match the required format",
+    "Positive": "numeric value should be greater that zero",
+    "PositiveOrZero": "numeric value should be greater or equal to zero",
+    "Size": "value does not meet length requirements",
+    "SizeField": "value does not meet length requirements",
+    "ValidHostAddress": "Valid fully qualified domain name (e.g. host.example.org) or public IP address (eg. 192.168.123.123) needed",
+    "ValidHostAddressField": "Valid IP address or fully qualified domain name needed"
+  },
+
+  "validation": {
+    "messages": {
+      "is": "The {field} field must have a value of \"{other}\""
+    }
+  },
+  "status": {
+    "signer_error": "Invocation of signer client failed",
+    "global_conf_generation": {
+      "status_not_found": "Global configuration generations status is unknown",
+      "failing": "Global configuration generation failing since {0}",
+      "global_conf_expired": "Global configuration expired"
+    },
+    "signing_key": {
+      "internal": {
+        "missing": "Signing of internal configuration failed - active key missing",
+        "token_not_found": "Signing of internal configuration failed - active key not found",
+        "token_not_active": "Signing of internal configuration failed - PIN of active key not entered",
+        "key_not_available": "Signing of internal configuration failed - active key not available"
+      },
+      "external": {
+        "missing": "Signing of external configuration failed - active key missing",
+        "token_not_found": "Signing of external configuration failed - active key not found",
+        "token_not_active": "Signing of external configuration failed - PIN of active key not entered",
+        "key_not_available": "Signing of external configuration failed - active key not available"
+      }
+    }
+  }
+}
