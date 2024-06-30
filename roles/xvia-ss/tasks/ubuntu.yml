@@ -1,0 +1,13 @@
+---
+- name: Ajusta permissões
+  file:
+    path: /tmp/xvia/ubuntu18.04/install-securityserver.sh
+    mode: 0500
+
+- name: Instala o Servidor Seguro X-Via
+  command: /tmp/xvia/ubuntu18.04/install-securityserver.sh
+
+- name: Remove a pasta com o instalador
+  file:
+    state: absent
+    path: /tmp/xvia/

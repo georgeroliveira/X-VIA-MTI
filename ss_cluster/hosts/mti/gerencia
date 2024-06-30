@@ -1,0 +1,8 @@
+[master]
+192.168.200.78 nodename=xv-gerencia1
+
+[slaves]
+192.168.200.79 nodename=xv-gerencia2
+
+[slaves:vars]
+master_host=192.168.200.78

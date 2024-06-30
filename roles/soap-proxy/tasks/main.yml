@@ -1,0 +1,102 @@
+---
+- import_tasks: ubuntu.yml
+  when: ansible_os_family == "Debian"
+
+- import_tasks: rhel.yml
+  when: ansible_os_family == "RedHat"
+
+- name: Install docker-compose
+  shell: "curl -L \"https://github.com/docker/compose/releases/download/1.25.3/docker-compose-$(uname -s)-$(uname -m)\" -o /usr/local/bin/docker-compose"
+
+- name: Fix docker compose binary permission
+  file:
+    path: /usr/local/bin/docker-compose
+    state: file
+    mode: +x
+
+- name: Ensures the docker service is active
+  systemd:
+    state: started
+    name: docker
+    enabled: yes
+
+- name: Download the soap proxy adapter
+  git:
+    repo: "{{ proxy_adapter_repo }}"
+    dest: "/srv/{{ proxy_adapter_name }}"
+  register: gitUpdate
+
+- name: Ensure the certificate directory exist
+  file:
+    path: /srv/sslcert
+    state: directory
+    mode: 0755
+
+- name: Prepare to generate the certificate
+  copy:
+    remote_src: yes
+    src: '/srv/{{ proxy_adapter_name }}/src/sslcert/{{item}}'
+    dest: '/srv/sslcert/{{item}}'
+    owner: root
+    group: root
+    mode: 0500
+  with_items:
+    - generate-certificate.sh
+
+- name: Check if theres already a certificate
+  stat:
+    path: "/srv/sslcert/local.crt"
+  register: cert
+
+- name: Generate the self signed certificate
+  command: "/srv/sslcert/generate-certificate.sh"
+  when: cert.stat.exists == False
+
+- name: install ca package on rhel systems
+  yum:
+    name: ca-certificates
+    state: present
+  when: ansible_os_family == "RedHat"
+
+- name: Install ca package on debian systems
+  apt:
+    name: ca-certificates
+    state: present
+    update_cache: yes
+  when: ansible_os_family == "Debian"
+
+- name: Enable dynamic ca configuration on rhel6
+  shell: /bin/update-ca-trust enable
+  when: ansible_os_family == "RedHat" and ansible_distribution_major_version|int == 6
+
+- name: Copy certificate authority to trusted ca path of the os
+  copy:
+    remote_src: yes
+    src: '/srv/sslcert/local.crt'
+    dest: '{{ ca_path[ansible_os_family][ansible_distribution_major_version|int] }}/'
+    owner: root
+    group: root
+    mode: 0644
+  notify:
+    - update trusted ca debian
+    - update trusted ca redhat
+
+- name: Create the .env file for the docker compose
+  lineinfile:
+    path: "/srv/{{ proxy_adapter_name }}/.env"
+    line: "{{ item.key }}={{item.value}}"
+    create: yes
+  with_items:
+    - { key: "KEY", value: "/srv/sslcert/local.key" }
+    - { key: "CERT", value: "/srv/sslcert/local.crt" }
+
+- name: Create the .env file for the docker compose
+  template:
+    src: "xroad-soap-proxy.service.j2"
+    dest: "/etc/systemd/system/xroad-soap-proxy.service"
+
+- name: Start service xroad-soap-proxy, if not started
+  service:
+    name: xroad-soap-proxy
+    state: started
+    enabled: yes

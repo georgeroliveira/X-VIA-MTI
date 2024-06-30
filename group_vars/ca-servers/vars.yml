@@ -1,0 +1,11 @@
+# see roles/xroad-ca/defaults/main.yml for other CA-related parameters
+xroad_ca_dn_country: "BR"
+xroad_ca_o: "MTI"
+xroad_ca_ou: "MTI Autoridade Certificadora"
+xroad_ca_cn: "ca.dev.mti.gov.br"
+xroad_ca_ocsp_o: "MTI"
+xroad_ca_ocsp_ou: "MTI Autoridade Certificadora"
+xroad_ca_ocsp_cn: "ocsp.dev.mti.gov.br"
+xroad_ca_tsa_o: "MTI"
+xroad_ca_tsa_ou: "MTI Autoridade Certificadora"
+xroad_ca_tsa_cn: "tsa.dev.mti.gov.br"

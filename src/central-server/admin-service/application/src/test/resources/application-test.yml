@@ -1,4 +1,0 @@
----
-debug: true
-logging:
-  config: classpath:centralserver-admin-service-test-logback.xml

@@ -1,0 +1,5 @@
+---
+- name: Garante que os pacotes básicos estão instalados (RHEL)
+  yum:
+    name: ['docker', 'device-mapper-libs', 'device-mapper-event-libs']
+    state: present

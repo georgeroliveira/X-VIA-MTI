@@ -1,0 +1,13 @@
+[cs-servers]
+# 127.0.0.1 master=true
+# 192.168.0.1
+
+[ss-servers]
+
+
+[ca-servers]
+
+
+### vars ###
+[ss-servers:vars]
+variant=vanilla

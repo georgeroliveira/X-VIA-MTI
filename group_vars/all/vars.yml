@@ -1,0 +1,14 @@
+---
+#controls lxd versions, if changed, check epel version and repo urls
+centos_releasever: 7
+ubuntu_releasever: bionic
+
+## --- If use user and password to authenticate
+# User. Ex: root
+#ansible_ssh_user: root
+# Password
+#ansible_ssh_pass: XXX
+ansible_python_interpreter: /usr/bin/python3
+ansible_ssh_user: root
+# Password
+ansible_ssh_pass: Sesp@2020!

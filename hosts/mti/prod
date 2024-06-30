@@ -1,0 +1,25 @@
+# Servidores Centrais (ubuntu)
+[cs-servers]
+192.168.200.76
+192.168.200.84
+
+#security servers (ubuntu or rhel)
+[ss-servers]
+
+
+#configuration proxies (ubuntu)
+[cp-servers]
+
+#certification authority, time stamping authority and ocsp service server (ubuntu)
+[ca-servers]
+
+#a custom super group for overriding variable defaults
+[xvia:children]
+cs-servers
+ss-servers
+cp-servers
+ca-servers
+
+### vars ###
+[ss-servers:vars]
+variant=vanilla

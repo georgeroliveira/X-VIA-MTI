@@ -1,0 +1,8 @@
+[master]
+10.8.15.5 nodename=master
+
+[slaves]
+10.8.15.6 nodename=slave1
+
+[slaves:vars]
+master_host=10.8.15.5

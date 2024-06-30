@@ -1,2 +1,0 @@
-# Need to restart xroad-proxy
-xroad	ALL=(root) NOPASSWD: /usr/sbin/service xroad-proxy restart

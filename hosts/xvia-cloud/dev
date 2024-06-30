@@ -1,0 +1,14 @@
+# Central Servers (ubuntu)
+[cs-servers]
+10.128.15.231
+
+# Security Servers (ubuntu / RHEL)
+[ss-servers]
+
+
+[ca-servers]
+#10.43.8.14
+
+### vars ###
+[ss-servers:vars]
+variant=vanilla

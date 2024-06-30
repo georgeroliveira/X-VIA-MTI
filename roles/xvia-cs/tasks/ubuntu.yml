@@ -1,0 +1,18 @@
+---
+- name: Copia o script instalador para o servidor remoto
+  copy:
+    src: "{{ playbook_dir }}/resources/xvia-scripts/ubuntu/install-centralserver.sh"
+    dest: /tmp/xvia/ubuntu18.04/install-centralserver.sh
+
+- name: Ajusta permissões
+  file:
+    path: /tmp/xvia/ubuntu18.04/install-centralserver.sh
+    mode: 0500
+
+- name: Instala o Servidor Central X-Via
+  command: /tmp/xvia/ubuntu18.04/install-centralserver.sh
+
+- name: Remove a pasta com o instalador
+  file:
+    state: absent
+    path: /tmp/xvia/
